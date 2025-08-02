@@ -466,3 +466,152 @@
     font-size: 0.8rem;
   }
 }
+
+/* Markdown Styles */
+.bot-message .message-content {
+  /* Override default styles for markdown content */
+  line-height: 1.6;
+}
+
+.bot-message .message-content h1,
+.bot-message .message-content h2,
+.bot-message .message-content h3,
+.bot-message .message-content h4,
+.bot-message .message-content h5,
+.bot-message .message-content h6 {
+  margin: 16px 0 8px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.bot-message .message-content h1 {
+  font-size: 1.5rem;
+}
+.bot-message .message-content h2 {
+  font-size: 1.3rem;
+}
+.bot-message .message-content h3 {
+  font-size: 1.1rem;
+}
+
+.bot-message .message-content p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.bot-message .message-content ul,
+.bot-message .message-content ol {
+  margin: 8px 0;
+  padding-left: 24px;
+}
+
+.bot-message .message-content li {
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+.bot-message .message-content code {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+  font-size: 0.9em;
+  color: #e74c3c;
+}
+
+.bot-message .message-content .code-block {
+  margin: 12px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.9em;
+}
+
+.bot-message .message-content pre {
+  margin: 8px 0;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  overflow-x: auto;
+  border: 1px solid #e9ecef;
+}
+
+.bot-message .message-content blockquote {
+  margin: 12px 0;
+  padding: 8px 16px;
+  border-left: 4px solid #4facfe;
+  background: rgba(79, 172, 254, 0.1);
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: #555;
+}
+
+.bot-message .message-content .table-wrapper {
+  margin: 12px 0;
+  overflow-x: auto;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.bot-message .message-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.bot-message .message-content th,
+.bot-message .message-content td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.bot-message .message-content th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.bot-message .message-content a {
+  color: #4facfe;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s ease;
+}
+
+.bot-message .message-content a:hover {
+  border-bottom-color: #4facfe;
+}
+
+.bot-message .message-content strong {
+  font-weight: 600;
+  color: #333;
+}
+
+.bot-message .message-content em {
+  font-style: italic;
+  color: #555;
+}
+
+.bot-message .message-content hr {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid #e9ecef;
+}
+
+.bot-message .message-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+/* Task list styling */
+.bot-message .message-content input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Strikethrough styling */
+.bot-message .message-content del {
+  text-decoration: line-through;
+  color: #999;
+}

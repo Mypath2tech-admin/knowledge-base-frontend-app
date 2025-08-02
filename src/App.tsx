@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
+import MarkdownRenderer from "./MarkdownRenderer";
 
 interface Message {
   id: number;
@@ -217,7 +218,13 @@ function App() {
               message.isUser ? "user-message" : "bot-message"
             }`}
           >
-            <div className="message-content">{message.text}</div>
+            <div className="message-content">
+              {message.isUser ? (
+                message.text
+              ) : (
+                <MarkdownRenderer content={message.text} />
+              )}
+            </div>
             <div className="message-time">
               {message.timestamp.toLocaleTimeString([], {
                 hour: "2-digit",
