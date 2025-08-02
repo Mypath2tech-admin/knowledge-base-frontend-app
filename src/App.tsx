@@ -258,15 +258,8 @@ function App() {
             disabled={!inputMessage.trim() || isLoading}
             className="send-button"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M7 11L12 6L17 11M12 18V7"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                transform="rotate(90 12 12)"
-              />
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
             </svg>
           </button>
         </div>
