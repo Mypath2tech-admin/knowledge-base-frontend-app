@@ -25,7 +25,7 @@ function App() {
 
   // n8n webhook configuration
   const webhookUrl =
-    "https://mypath2tech.app.n8n.cloud/webhook/6ac574cc-5aa8-4993-916b-6682d4f37bbc/chat";
+    "put your webhook url here";
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
